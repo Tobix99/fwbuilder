@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Install dependencies
         run: |
-          brew install qt net-snmp ccache
+          brew install qt@5 net-snmp ccache
           brew upgrade openssl cmake
       - name: Compilation cache
         uses: actions/cache@v2
